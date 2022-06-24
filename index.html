@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="sideMenu">
+      <div class="logo">
+        <img src="imgs/logo.png" alt="logo" />
+        <i id="collapse" class="fa-solid fa-align-justify fa-xl"></i>
+        <div class="share">
+          <i class="fa-solid fa-globe fa-xl"></i>
+          <i class="fas fa-share-alt fa-xl"></i>
+        </div>
+      </div>
+
+      <div id="menu" class="menu">
+        <div class="items">
+          <ul class="ps-0">
+            <li id="one" class="mb-4"><a href="#">Now playing</a></li>
+            <li id="two" class="mb-4 tow"><a href="#">Popular</a></li>
+            <li id="three" class="mb-4 3"><a href="#">Top Rated</a></li>
+            <li id="four" class="mb-4 4"><a href="#">Trending</a></li>
+            <li id="five" class="mb-4 5"><a href="#">Upcoming</a></li>
+            <li id="six" class="mb-4 6"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="social w-100">
+          <div
+            class="social-icons d-flex w-50 text-white justify-content-between mb-4"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <p class="text-white-50">Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <!-- search inputs -->
+      <div class="row">
+        <div class="col-md-6 my-5">
+          <input
+            type="text"
+            class="form-control bg-transparent border-0 border-bottom rounded-0 py-3 text-white text-center"
+            placeholder="Get movies by word.."
+            id="searchWord"
+          />
+        </div>
+
+        <div class="col-md-6 my-5">
+          <input
+            type="text"
+            class="form-control bg-transparent border-0 border-bottom rounded-0 py-3 text-white text-center"
+            placeholder="search"
+            id="search"
+          />
+        </div>
+      </div>
+
+      <!-- desplayed movies -->
+      <div class="row" id="myData"></div>
+
+      <!-- contact us -->
+      <div class="row my-5">
+        <h1 class="text-white my-5">Contact Us...</h1>
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control bg-transparent border-0 border-bottom rounded-0 py-3 text-white text-center"
+            placeholder="Enter Your Name"
+            id="name"
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            type="email"
+            class="form-control bg-transparent border-0 border-bottom rounded-0 py-3 text-white text-center"
+            placeholder="Enter Your Email"
+            id="email"
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            type="number"
+            class="form-control bg-transparent border-0 border-bottom rounded-0 py-3 text-white text-center"
+            placeholder="Enter Your Phone Number"
+            id="phone"
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            type="number"
+            class="form-control bg-transparent border-0 border-bottom rounded-0 py-3 text-white text-center"
+            placeholder="Enter Your Age"
+            id="age"
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            type="password"
+            class="form-control bg-transparent border-0 border-bottom rounded-0 py-3 text-white text-center"
+            placeholder="Enter Your Password"
+            id="Password"
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            type="password"
+            class="form-control bg-transparent border-0 border-bottom rounded-0 py-3 text-white text-center"
+            placeholder="Confirm Your Password"
+            id="confirm"
+          />
+        </div>
+        <div class="col-md-3">
+          <button type="submit" id="submit" class="btn btn-outline-danger mt-5">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
